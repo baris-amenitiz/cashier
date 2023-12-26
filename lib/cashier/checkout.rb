@@ -30,7 +30,7 @@ module Cashier
     end
 
     def format_total_sum(total_sum)
-      "€#{total_sum.round(2)}"
+      "#{total_sum.round(2)}€"
     end
 
     def find_pricing_rule(product_code)

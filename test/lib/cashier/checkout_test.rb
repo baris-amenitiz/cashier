@@ -29,7 +29,7 @@ module Cashier
         checkout.scan(item_gr1)
         checkout.scan(item_gr1)
 
-        assert_equal(checkout.total, "€3.11")
+        assert_equal(checkout.total, "3.11€")
       end
 
       it "returns total sum and this is the second test data in the task" do
@@ -43,7 +43,7 @@ module Cashier
         checkout.scan(item_gr1)
         checkout.scan(item_sr1)
 
-        assert_equal(checkout.total, "€16.61")
+        assert_equal(checkout.total, "16.61€")
       end
 
       it "returns total sum and this is the latest test data in the task" do
@@ -59,7 +59,7 @@ module Cashier
         checkout.scan(item_cf1)
         checkout.scan(item_cf1)
 
-        assert_equal(checkout.total, "€30.57")
+        assert_equal(checkout.total, "30.57€")
       end
     end
     # rubocop:enable Metrics/BlockLength
